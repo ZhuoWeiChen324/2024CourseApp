@@ -1,6 +1,6 @@
 #include "Person.h"
-
 #include <string>
+#include <iostream>
 using namespace std;
 
 
@@ -24,34 +24,34 @@ Person::Person()
 
 string Person::getId() const
 {
-	return string();
+	return id;
 }
 
 string Person::getLastName() const
 {
-	return string();
+	return lastName;
 }
 
 string Person::getFirstName() const
 {
-	return string();
+	return firstName;
 }
 
 string Person::getGender() const
 {
-	return string();
+	return gender;
 }
 
 string Person::getBirthData() const
 {
-	return string();
+	return birthData;
 }
 
 
 
 void Person::setId(const string& id)
 {
-	this->lastName = lastName;
+	this -> id = id;
 }
 
 void Person::setLasterName(const string& lasterName)
@@ -72,6 +72,15 @@ void Person::setGenderName(const string& gender)
 void Person::setBirthData(const string& birthData)
 {
 	this->birthData = birthData;
+}
+
+void Person::display() const
+{
+	cout << "ID: " << id << endl;
+	cout << "姓: " << lastName << endl;
+	cout << "名: " << firstName << endl;
+	cout << "性別: " << gender << endl;
+	cout << "生日: " << birthData << endl;
 }
 
 

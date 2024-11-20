@@ -16,7 +16,6 @@ public:
 	Person(const string& id, const string& lastName, const string& firstName, const string& gender, const string& birthData);
 
 	Person();
-	display();
 
 	//Getter,¨ú­È¨ç¼Æ
 	string getId() const;
@@ -31,6 +30,8 @@ public:
 	void setFirstName(const string& firstName);
 	void setGenderName(const string& gender);
 	void setBirthData(const string& birthData); 
+
+	void display() const; 
 
 };
 
