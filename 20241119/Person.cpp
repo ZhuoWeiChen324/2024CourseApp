@@ -13,8 +13,7 @@ using namespace std;
 	this->birthData = birthData;
 }*/
 
-Person::Person(const string& id, const string& lastName, const string& firstName, const  string& gender, const 
-	string& birthData) : id(id), lastName(lastName), firstName(firstName), gender(gender), birthData(birthData)
+Person::Person(const string& id, const string& lastName, const string& firstName, const  string& gender, const string& birthData) : id(id), lastName(lastName), firstName(firstName), gender(gender), birthData(birthData)
 {
 }
 
@@ -46,8 +45,6 @@ string Person::getBirthData() const
 {
 	return birthData;
 }
-
-
 
 void Person::setId(const string& id)
 {

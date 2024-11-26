@@ -1,5 +1,5 @@
 #pragma once
-
+#include <string>
 using namespace std;
 
 enum class Depertment {
@@ -19,3 +19,9 @@ enum class ClassName {
 	_4A,
 	_4B,
 };
+
+class Utility1 {
+public:
+	static string toString(Depertment depertment);
+	static string toString(ClassName className);
+}
