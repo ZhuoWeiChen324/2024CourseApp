@@ -20,8 +20,8 @@ public:
 
 	//Setter,³]­È¨ç¼Æ
     void setStudentId(const string& studentId);
-    void setDepartment(const Depertment department);
-    void setClassName(const ClassName className);
+    void setDepartment(Depertment department);
+    void setClassName(ClassName className);
 
 	void display() const;
 };

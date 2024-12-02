@@ -1,23 +1,28 @@
 #include "Student.h"
 #include <iostream>
+using namespace std;
 
-Student::Student(const string& id, const string& lastName, const string& firstName, const string& gander, const string& birthData, const string& studentid, Depertment depertment, ClassName className)
+Student::Student(const string& id, const string& lastName, const string& firstName, const string& gander, const string& birthData, const string& studentid, Depertment depertment, ClassName className) : Person(id, lastName, firstName, gander, birthData), studentId(studentid), department(depertment), className(className)
 {
 }
 
 string Student::getStudentId() const
 {
-	return string();
+	return studentId;
 }
 
 Depertment Student::getDepartment() const
 {
-	return Depertment();
+	return department;
 }
 
+Depertment Student::getDepartment() const
+{
+	return department;
+}
 ClassName Student::getClassName() const
 {
-	return ClassName();
+	return className;
 }
 
 void Student::setStudentId(const string& studentId)
