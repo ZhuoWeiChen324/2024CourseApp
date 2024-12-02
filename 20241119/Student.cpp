@@ -16,10 +16,6 @@ Depertment Student::getDepartment() const
 	return department;
 }
 
-Depertment Student::getDepartment() const
-{
-	return department;
-}
 ClassName Student::getClassName() const
 {
 	return className;

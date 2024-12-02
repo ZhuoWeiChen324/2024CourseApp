@@ -1,19 +1,21 @@
 #include "Utility1.h"
 #include <string>
+using namespace std;
 
 string Utility1::toString(Depertment depertment)
 {
-    switch (department) {
-    case Department::ComputerSciece:
-        return "資訊工程";
-    case Department::ElectricalEngineering:
-        return "電機工程";
-    case Department::ElectronicEngineering:
-        return "電子工程";
-    case Department::InformationManagement:
-        return "資訊管理";
-    default:
-        return "Unknown Department";
+	switch (depertment) {
+	case Depertment::ComputerSciece:
+		return "資訊工程";
+	case Depertment::ElectricalEngineering:
+		return "電機工程";
+	case Depertment::ElectronicEngineering:
+		return "電子工程";
+	case Depertment::IformationManagement:
+		return "資訊管理";
+	default:
+		return "未知";
+	}
 }
 
 string Utility1::toString(ClassName className)
@@ -37,4 +39,5 @@ string Utility1::toString(ClassName className)
 		return "四乙";
 	default:
 		return "未知";
+	}
 }
