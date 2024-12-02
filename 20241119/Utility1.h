@@ -24,4 +24,4 @@ class Utility1 {
 public:
 	static string toString(Depertment depertment);
 	static string toString(ClassName className);
-}
+};
