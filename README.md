@@ -9,12 +9,12 @@
 - 了解類別內成員的存取權限
 - 了解類別的建構子與解構子
 
-  ## ver2
+## ver2
   - 新增生自Person的Student, Teacher類別
   - 新增列舉類別ClassName, Department
   - 學會使用Visual Studio的除錯功能
   - 學會使用git的分支(branch)功能
   - 學會類別的繼承觀念
  
-  ** Ver3
+## Ver3
   - 新增README.md說明文件
