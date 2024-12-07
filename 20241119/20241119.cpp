@@ -11,10 +11,16 @@
 #include "Course.h"
 
 #include "Utility1.h"
+#include "20241119.h"
 
 using namespace std;
 
 int main()
+{
+	InitializeData();
+}
+
+void InitializeData()
 {
 	Person person1("A123456789", "Chen", "Jason", "M", "1999-01-01");
 
@@ -41,5 +47,10 @@ int main()
 	//course2.display();
 	//course3.display();
 
-	Teacher teacher1("t123456789", "陳", "小明", "男", "1999-01-01", "T001", Depertment::ComputerSciece, ClassName::_1A, { course1, course2, course3 });
+	vector<Course> teacher1_courses = { course1, course2, course3 };
+
+	Teacher teacher1("t123456789", "王", "大富", "男", "1980-7-1", "T001", Depertment::ComputerSciece, ClassName::_1A, { teacher1_courses });
+
+	cout << "----------------" << endl;
+	teacher1.display();
 }
