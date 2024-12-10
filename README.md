@@ -25,4 +25,6 @@
   - 新增Course類別
   - 新增繼承自Person的Teacher類別
   - 使用[vector](https://www.w3schools.com/cpp/cpp_vectors.asp)容器儲存物件來記錄教師所授課的課程
-  - 變數重新命名(rename)，程式碼重構(refactoring)
+  - 變數重新命名(rename)，程式碼重構(refactoring) 
+## ver4
+  -
