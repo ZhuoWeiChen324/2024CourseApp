@@ -28,7 +28,7 @@
   - 使用[vector](https://www.w3schools.com/cpp/cpp_vectors.asp)容器儲存物件來記錄教師所授課的課程
   - 變數重新命名(rename)，程式碼重構(refactoring)
 
-##ver 4
+## ver 4
 - 新增選課紀錄Record類別
 - 瞭解類別的靜態成員(static member)的概念
 - 使用time_t型別記錄選課時間
