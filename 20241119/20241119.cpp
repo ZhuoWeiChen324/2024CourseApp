@@ -102,6 +102,7 @@ void InitializeData()
 void displayMenu() {
 	int choice;
 	do {
+		system("cls");//螢幕清空
 		cout << "=========================" << endl;
 		cout << "1. 列出學生資料" << endl;
 		cout << "2. 列出課程資料" << endl;
@@ -115,6 +116,8 @@ void displayMenu() {
 		case 1:
 			cout << "列出學生資料" << endl;
 			listStudents();
+			cout << "按任意建繼續...";
+			system("pause"); //暫停
 			break;
 		case 2:
 			cout << "列出課程資料" << endl;

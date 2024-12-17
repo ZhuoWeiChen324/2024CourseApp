@@ -37,3 +37,6 @@
 - 瞭解vector容器的push_back()和size()方法的意義
 - 使用do-while迴圈
 - 使用switch-case敘述
+
+## ver 5
+- 使用system用法
