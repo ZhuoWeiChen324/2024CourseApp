@@ -108,6 +108,8 @@ void displayMenu() {
 		cout << "2. 列出課程資料" << endl;
 		cout << "3. 列出教師資料" << endl;
 		cout << "4. 列出選課紀錄" << endl;
+		cout << "=========================" << endl;
+
 		cout << "0. 退出" << endl;
 		cout << "請選擇操作: ";
 		cin >> choice;
@@ -121,24 +123,21 @@ void displayMenu() {
 			break;
 		case 2:
 			cout << "列出課程資料" << endl;
-			for (auto course : courses)
-			{
-				course.display();
-			}
+			listCourses();
+			cout << "按任意建繼續...";
+			system("pause"); //暫停
 			break;
 		case 3:
 			cout << "列出教師資料" << endl;
-			for (auto teacher : teachers)
-			{
-				teacher.display();
-			}
+			listTeachers();
+			cout << "按任意建繼續...";
+			system("pause"); //暫停
 			break;
 		case 4:
 			cout << "列出選課紀錄" << endl;
-			for (auto record : records)
-			{
-				record.display();
-			}
+			listRecords();
+			cout << "按任意建繼續...";
+			system("pause"); //暫停
 			break;
 		case 0:
 			cout << "退出" << endl;
@@ -157,6 +156,42 @@ void listStudents()
 	for (auto student : students)
 	{
 		student.display();
+		cout << endl;
+	}
+	cout << endl;
+}
+
+void listCourses()
+{
+	cout << "課程資料總共有" << courses.size() << "筆" << endl;
+	cout << "----------------" << endl;
+	for (auto course : courses)
+	{
+		course.display();
+		cout << endl;
+	}
+	cout << endl;
+}
+
+void listTeachers()
+{
+	cout << "教師資料總共有" << teachers.size() << "筆" << endl;
+	cout << "----------------" << endl;
+	for (auto teacher : teachers)
+	{
+		teacher.display();
+		cout << endl;
+	}
+	cout << endl;
+}
+
+void listRecords()
+{
+	cout << "選課紀錄總共有" << records.size() << "筆" << endl;
+	cout << "----------------" << endl;
+	for (auto record : records)
+	{
+		record.display();
 		cout << endl;
 	}
 	cout << endl;
