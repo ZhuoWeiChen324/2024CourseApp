@@ -7,6 +7,7 @@ enum class Depertment {
 	ElectricalEngineering,
 	ElectronicEngineering,
 	IformationManagement,
+	Last
 };
 
 enum class ClassName {
@@ -18,6 +19,7 @@ enum class ClassName {
 	_3B,
 	_4A,
 	_4B,
+	Last
 };
 
 class Utility1 {
