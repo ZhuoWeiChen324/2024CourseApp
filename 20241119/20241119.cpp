@@ -108,6 +108,7 @@ void displayMenu() {
 		cout << "2. 列出課程資料" << endl;
 		cout << "3. 列出教師資料" << endl;
 		cout << "4. 列出選課紀錄" << endl;
+		cout << "5. 查詢學習資料" << endl;
 		cout << "=========================" << endl;
 
 		cout << "0. 退出" << endl;
@@ -118,26 +119,26 @@ void displayMenu() {
 		case 1:
 			cout << "列出學生資料" << endl;
 			listStudents();
-			cout << "按任意建繼續...";
 			system("pause"); //暫停
 			break;
 		case 2:
 			cout << "列出課程資料" << endl;
 			listCourses();
-			cout << "按任意建繼續...";
 			system("pause"); //暫停
 			break;
 		case 3:
 			cout << "列出教師資料" << endl;
 			listTeachers();
-			cout << "按任意建繼續...";
 			system("pause"); //暫停
 			break;
 		case 4:
 			cout << "列出選課紀錄" << endl;
 			listRecords();
-			cout << "按任意建繼續...";
 			system("pause"); //暫停
+			break;
+		case 5:
+			cout << "查詢學生資料" << endl;
+			queryStudent();
 			break;
 		case 0:
 			cout << "退出" << endl;
@@ -195,4 +196,24 @@ void listRecords()
 		cout << endl;
 	}
 	cout << endl;
+}
+
+void queryStudent()
+{
+	string studentId;
+	cout << "請輸入學號: ";
+	cin >> studentId;
+
+	bool found = false;
+	for (auto student : students) {
+		if (student.getStudentId() == studentId) {
+			student.display();
+			found = true;
+			break;
+		}
+	}
+	if (!found) {
+		cout << "找不到學號為" << studentId << "的學生" << endl;
+	}
+	system("pause");
 }
