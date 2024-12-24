@@ -145,14 +145,17 @@ void displayMenu() {
 			break;
 		case 6:
 			cout << "查詢課程資料" << endl;
+			queryStudent();
 			system("pause"); //暫停
 			break;
 		case 7:
 			cout << "查詢教師資料" << endl;
+			//queryStudent();
 			system("pause"); //暫停
 			break;
 		case 8:
 			cout << "查詢選課紀錄" << endl;
+			//queryStudent();
 			system("pause"); //暫停
 			break;
 		case 9:
@@ -161,6 +164,10 @@ void displayMenu() {
 			system("pause"); //暫停
 			break;
 			//新增課程、教師、選課紀錄的功能
+		case10:
+			cout << "新增學生資料" << endl;
+			system("pause"); //暫停
+			break;
 		case 0:
 			cout << "退出" << endl;
 			break;
