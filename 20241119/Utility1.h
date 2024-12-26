@@ -7,6 +7,7 @@ enum class Depertment {
 	ElectricalEngineering,
 	ElectronicEngineering,
 	IformationManagement,
+	MechanicalEngineering,
 	Last
 };
 

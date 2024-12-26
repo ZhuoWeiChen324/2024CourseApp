@@ -34,9 +34,9 @@ int main()
 
 void InitializeData()
 {
-	Person person1("A123456789", "Chen", "Jason", "M", "1999-01-01");
+	/*Person person1("A123456789", "Chen", "Jason", "M", "1999-01-01");
 
-	/*Person* person2 = new Person();
+	Person* person2 = new Person();
 	person2->setId("B987654321");
 	person2->setLasterName ("Wang");
 	person2->setFirstName ("David");
@@ -174,57 +174,57 @@ void displayMenu() {
 			system("pause"); //暫停
 			break;
 			//新增課程、教師、選課紀錄的功能
-		case10:
+		case 10:
 			cout << "新增學生資料" << endl;
 			//addCourse();
 			system("pause"); //暫停
 			break;
-		case11:
+		case 11:
 			cout << "新增教師資料" << endl;
 			//addTeacher();
 			system("pause"); //暫停
 			break;
-		case12:
+		case 12:
 			cout << "新增選課紀錄" << endl;
 			//addRecord();
 			system("pause"); //暫停
 			break;
 			//作業10: 完成以下內容
 			//刪除學生、課程、教師、選課紀錄的功能
-		case13:
+		case 13:
 			cout << "刪除學生資料" << endl;
 			deleteStudent();
 			system("pause"); //暫停
 			break;
-		case14:
+		case 14:
 			cout << "刪除課程資料" << endl;
 			//deleteCourse();
 			system("pause"); //暫停
 			break;
-		case15:
+		case 15:
 			cout << "刪除教師資料" << endl;
 			//deleteTeacher();
 			system("pause"); //暫停
 			break;
-		case16:
+		case 16:
 			cout << "刪除選課紀錄" << endl;
-			//deleteRecord(); or removeRecord();
+			//deleteRecord();
 			system("pause"); //暫停
 			break;
 			//修改學生、課程、教師、選課紀錄的功能
-		case17:
+		case 17:
 			cout << "修改學生資料" << endl;
 			updateStudent();
 			system("pause"); //暫停
 			break;
-		case18:
+		case 18:
 			cout << "修改課程資料" << endl;
-			//modifyCourse(); or updateCourse();
+			//updateCourse();
 			system("pause"); //暫停
 			break;
-		case19:
+		case 19:
 			cout << "修改教師資料" << endl;
-			//modifyTeacher(); or updateTeacher();
+			//updateTeacher();
 			system("pause"); //暫停
 			break;
 		case 0:
@@ -426,7 +426,7 @@ void updateStudent()
 		if (student.getStudentId() == studentId) {
 			found = true;
 			int departmentChoice, classNameChoice;
-		
+
 			cout << "科系:" << endl;
 			for (int i = 0; i < static_cast<int>(Depertment::Last); i++)
 			{
@@ -447,6 +447,7 @@ void updateStudent()
 			ClassName className = static_cast<ClassName>(classNameChoice);
 			student.setClassName(className);
 		}
+	}
 		if (!found) {
 			cout << "找不到學號為" << studentId << "的學生" << endl;
 		}

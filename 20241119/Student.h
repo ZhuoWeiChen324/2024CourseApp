@@ -2,8 +2,7 @@
 #include "Person.h"
 #include "Utility1.h"
 
-class Student :
-    public Person
+class Student : public Person
 {
 private:
     string studentId;

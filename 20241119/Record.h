@@ -12,7 +12,6 @@ private:
 	string courseId;
 	time_t recordDate;
 public:
-	Record();
 	Record(const string& studentId, const string& courseId);
 
 	int getRecordId() const;
