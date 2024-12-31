@@ -62,4 +62,5 @@
 ## ver 7
 - 了解序列化(serialization)的概念
 - 了解C++的串流(stream)意義
-- 
+- std::find_if()方法的使用
+- C++的Lambda函式
